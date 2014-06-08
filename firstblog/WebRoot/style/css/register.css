@@ -1,0 +1,45 @@
+body{
+	margin:0;
+	padding:0;
+	font-family:"ËÎÌו";
+	font-size:26px;
+	background-color:#ff99cc;
+	
+}
+.wrap{
+	margin: auto;
+	width: 960px;
+}
+.header{
+	border:0px solid blue;
+	height: 100px;
+	width: 100%;
+}
+.content{
+	border:0px solid blue;
+	height:100%;
+	weight:100%;
+}
+input {
+	width:200px;
+	height:35px
+}
+ .button{
+	width:90px;
+	height:35px
+}
+table{
+	height:70%;
+	width:100%;
+	border:0px solid blue;
+}
+#code1{  
+	border:2px solid black;
+    font-family:Arial;  
+    font-style:italic; 
+    font-size:22px; 
+    font-weight:bold;  
+    border:0;  
+    letter-spacing:2px;  
+    color:blue;  
+} 

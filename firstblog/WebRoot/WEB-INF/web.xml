@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <welcome-file-list>
+    <welcome-file>pages/Login.jsp</welcome-file>
+  </welcome-file-list>
+
+
+<!-- 登陆  liyh    start -->
+<servlet>
+	<servlet-name>loginServlet</servlet-name>
+    <servlet-class>com.ourproject.firstblog.servlet.LoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>loginServlet</servlet-name>
+	<url-pattern>/servlet/loginSerblet</url-pattern>
+</servlet-mapping>
+<!-- 登陆  liyh    end -->
+
+<!-- 注册   start -->
+<servlet>
+	<servlet-name>registerServlet</servlet-name>
+    <servlet-class>com.ourproject.firstblog.servlet.RegisterServlet</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>checkUsername</servlet-name>
+    <servlet-class>com.ourproject.firstblog.servlet.CheckUsernameServlet</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>IdentityServlet</servlet-name>
+	<servlet-class>com.ourproject.firstblog.servlet.IdentityServlet</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>ResetpwdServlet</servlet-name>
+	<servlet-class>com.ourproject.firstblog.servlet.ResetpwdServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>registerServlet</servlet-name>
+	<url-pattern>/pages/regist</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>checkUsername</servlet-name>
+	<url-pattern>/pages/checkUsername</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>IdentityServlet</servlet-name>
+	<url-pattern>/pages/IdentityServlet</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>ResetpwdServlet</servlet-name>
+	<url-pattern>/pages/ResetpwdServlet</url-pattern>
+</servlet-mapping>
+
+<!-- 注册    end -->
+</web-app>
